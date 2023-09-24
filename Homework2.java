@@ -26,8 +26,22 @@ public class Homework2 {
         Point point3 = point2.scale(0.7);
         System.out.println("X: " + point3.getCoordinateX() + "   Y: " + point3.getCoordinateY());*/
         //Task 4
-        //Car car = new Car("Mersedes Benz", 60, "Black", 0, 6);
-        //car.info();
+        /*Car car = new Car("Mersedes Benz", 60, "Black", 0, 6);
+        car.info();
+        car.start();
+        while (car.isDriving()){
+            car.driving();
+            System.out.println("Mileage: " + car.getMileage());
+        }
+        car.info();
+        car.refueling(15);
+        car.info();
+        car.start();
+        while (car.isDriving()){
+            car.driving();
+            System.out.println("Mileage: " + car.getMileage());
+        }
+        car.info();*/
     }
     static boolean equals(String s, String t) {
         return s.equalsIgnoreCase(t);
