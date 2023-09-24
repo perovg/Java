@@ -1,24 +1,27 @@
+import java.util.Arrays;
 public final class Point {
-    private double x;
-    private double y;
+    private final double x;
+    private final double y;
+
     public Point(){
-        x = 0;
-        y = 0;
+        this.x = 0;
+        this.y = 0;
     }
+
     public Point(double x, double y){
         this.x = x;
         this.y = y;
     }
-    public double[] getCoordinates(){
-        double[] arr = {x, y};
-        return arr;
+    public String getCoordinateX(){
+        return Double.toString(x);
     }
-    public void translate(double x, double y){
-        this.x += x;
-        this.y += y;
+    public String getCoordinateY(){
+        return Double.toString(y);
     }
-    public void scale(double x){
-        this.x *= x;
-        this.y *= x;
+    public Point translate(double x, double y){
+        return new Point(this.x + x, this.y + y);
+    }
+    public Point scale(double x){
+        return new Point(this.x * x, this.y * x);
     }
 }
