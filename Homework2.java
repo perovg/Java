@@ -42,6 +42,21 @@ public class Homework2 {
             System.out.println("Mileage: " + car.getMileage());
         }
         car.info();*/
+        //Task 5
+        /*Pet[] pets = {new Cat("Barsik", "Siberian", 7, 3, "Alex", Cat.FeedType.Expensive), new Dog("Riko", "King Charlz Spaniel", 9, 2, "Jenya", Dog.FeedType.Cheap), new Parrot("Кеша", "Молдавия", 150, 1, "Сильвер", false)};
+        for (int i = 0; i < pets.length; i ++){
+            pets[i].say();
+            if (pets[i] instanceof Cat cat){
+                cat.walk();
+            }
+            if (pets[i] instanceof Dog dog){
+                dog.walk("Yana");
+            }
+            if (pets[i] instanceof Parrot parrot){
+                parrot.fly();
+            }
+        }*/
+
     }
     static boolean equals(String s, String t) {
         return s.equalsIgnoreCase(t);
