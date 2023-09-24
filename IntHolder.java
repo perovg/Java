@@ -6,10 +6,10 @@ public class IntHolder{
     public IntHolder(int value){
         this.value = value;
     }
-    public static IntHolder newIntHolder(int value) {
+    public static IntHolder of(int value) {
         return new IntHolder(value);
     }
-    public int get_value(){
+    public int getValue(){
         return this.value;
     }
     public int sum(IntHolder a){
@@ -33,15 +33,20 @@ public class IntHolder{
         b.value = c;
     }
     @Override
-    public boolean equals(Object o) {
-        if (this == o){
+    public boolean equals(Object obj) {
+        if (obj == this){
             return true;
         }
-        return false;
+        if (obj == null || obj.getClass() != this.getClass()){
+            return false;
+        }
+        IntHolder comparable = (IntHolder) obj;
+        return this.diff(comparable) == 0;
     }
     @Override
     public int hashCode(){
-        return Objects.hash(value);
+        int result = (int) value % 1000000;
+        return result;
     }
 
 
