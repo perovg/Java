@@ -56,6 +56,28 @@ public class Homework2 {
                 parrot.fly();
             }
         }*/
+        //Task 6
+        /*RecordContact contact = new RecordContact("Вася", "Vasya2005@gmail.com");
+        contact.sayHello();
+        contact.info();*/
+        //Task 7
+        /*Car car = new Car.Builder("Mersedes Benz", 6)
+                .color("Black")
+                .mileage(0)
+                .maxFuel(120)
+                .fuel(68)
+                .build();
+        car.info();*/
+        //Task 8
+        /*Shape ball = new Ball(3);
+        ball.print();
+        Shape cylinder = new Cylinder(40, 8);
+        cylinder.print();
+        Shape pyramid = new Pyramid(15, 13);
+        pyramid.print();
+        Shape colorPyramid = new ColorPyramid("Синий", 15, 13);
+        colorPyramid.print();*/
+
 
     }
     static boolean equals(String s, String t) {
